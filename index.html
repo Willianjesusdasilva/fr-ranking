@@ -82,16 +82,38 @@
     .score {
       font-size: 18px;
       color: #0f0;
-      min-width: 80px;
+      width: 100%;
+    }
+    .extra-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      padding-top: 6px;
+      font-size: 12px;
       text-align: right;
     }
 
-    .date {
-      font-size: 12px;
-      color: #888;
-      padding-top: 4px;
+    .little-title {
+      font-size: 10px;
+      color: #fff;
+      padding-top: 0px;
       width: 100%;
     }
+
+    .little-content {
+      font-size: 10px;
+      color: #888;
+      padding-top: 0px;
+      width: 100%;
+    }
+
+    .little-spacer {
+      font-size: 10px;
+      color: #f00;
+      padding-top: 0px;
+      width: 100%;
+    }
+
 
     footer {
       text-align: center;
@@ -156,8 +178,13 @@ async def carregar_ranking():
         div.innerHTML = f"""
             <div class='rank'>{idx}º</div>
             <div class='model'>{item['carro']} - {item['dono']}</div>
-            <div class='score'>{float(item['potencia_cv']):.2f}cv</div>
-            <div class='date'>Medição: {item['data_medicao']} | Tração: {item['tracao']}</div>
+            <div class='extra-info'>
+              <div class='score'>{float(item['potencia_cv']):.2f}cv</div>
+              <div class='little-title'>Tração:</div> 
+              <div class='little-content'>{item['tracao']}</div>
+              <div class='little-title'>Medição:</div> 
+              <div class='little-content'>{item['data_medicao']}</div>
+            </div>
         """
         container.appendChild(div)
 
