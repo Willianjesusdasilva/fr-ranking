@@ -113,17 +113,18 @@ async def carregar_ranking():
     data = json.loads(text)
     data = data["data"]
 
-    data.sort(key=lambda x: x["posicao"])
+    data.sort(key=lambda x: x["potencia_cv"], reverse=True)
     container = document.getElementById("ranking-container")
     container.innerHTML = ""
 
-    for item in data:
+    for idx, item in enumerate(data, start=1):
         div = document.createElement("div")
         div.className = "car-entry"
         div.innerHTML = f"""
-            <div class='rank'>{item['posicao']}º</div>
+            <div class='rank'>{idx}º</div>
             <div class='model'>{item['carro']} - {item['dono']}</div>
-            <div class='score'>{item['potencia_cv']}cv</div>
+            <div style='font-size: 12px; color: #888; padding-right: 30px;'>({item['data_medicao']})</div>
+            <div class='score'>{float(item['potencia_cv']):.2f}cv</div>
         """
         container.appendChild(div)
 
