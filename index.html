@@ -157,7 +157,7 @@ async def carregar_ranking():
             <div class='rank'>{idx}º</div>
             <div class='model'>{item['carro']} - {item['dono']}</div>
             <div class='score'>{float(item['potencia_cv']):.2f}cv</div>
-            <div class='date'>({item['data_medicao']}) - {item['tracao']}</div>
+            <div class='date'>Medição: {item['data_medicao']} | Tração: {item['tracao']}</div>
         """
         container.appendChild(div)
 
