@@ -5,15 +5,15 @@
   <title>Ranking Floripa Racing</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Orbitron (estilo racing) -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
-    <!-- PyScript CSS -->
-    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
-
-    <!-- This script tag bootstraps PyScript -->
-    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+  <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+  <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Orbitron', sans-serif;
@@ -28,11 +28,13 @@
       justify-content: center;
       padding: 40px 20px;
       background: #000;
+      text-align: center;
     }
 
     header img {
       height: 80px;
       margin-bottom: 10px;
+      max-width: 90%;
     }
 
     header h2 {
@@ -53,6 +55,7 @@
 
     .car-entry {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
       padding: 12px 20px;
@@ -66,24 +69,54 @@
     .rank {
       font-size: 24px;
       color: #f00;
-      width: 50px;
+      width: 60px;
     }
 
     .model {
       flex: 1;
       font-size: 18px;
       color: #fff;
+      min-width: 150px;
     }
 
     .score {
       font-size: 18px;
       color: #0f0;
+      min-width: 80px;
+      text-align: right;
+    }
+
+    .date {
+      font-size: 12px;
+      color: #888;
+      padding-top: 4px;
+      width: 100%;
     }
 
     footer {
       text-align: center;
       padding: 30px;
       color: #777;
+    }
+
+    @media (max-width: 600px) {
+      .car-entry {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .rank, .score {
+        font-size: 20px;
+      }
+
+      .model {
+        font-size: 16px;
+      }
+
+      .score {
+        align-self: flex-end;
+        padding-top: 6px;
+      }
     }
   </style>
 </head>
@@ -107,7 +140,7 @@ import asyncio
 import json
 
 async def carregar_ranking():
-    url = "https://willianjesusdasilva.github.io/fr-ranking/data/data.json"  # Caminho relativo ao HTML
+    url = "https://willianjesusdasilva.github.io/fr-ranking/data/data.json"
     response = await fetch(url)
     text = await response.text()
     data = json.loads(text)
@@ -123,8 +156,8 @@ async def carregar_ranking():
         div.innerHTML = f"""
             <div class='rank'>{idx}º</div>
             <div class='model'>{item['carro']} - {item['dono']}</div>
-            <div style='font-size: 12px; color: #888; padding-right: 30px;'>({item['data_medicao']})</div>
             <div class='score'>{float(item['potencia_cv']):.2f}cv</div>
+            <div class='date'>({item['data_medicao']})</div>
         """
         container.appendChild(div)
 
