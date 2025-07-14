@@ -100,22 +100,20 @@
     Atualizado automaticamente em tempo real — Powered by Floripa Racing
   </footer>
 
-  <py-script>
+<py-script>
 from js import fetch, document
 import asyncio
 import json
 
 async def carregar_ranking():
-    url = "https://willianjesusdasilva.github.io/fr-ranking/data/data.json"
+    url = "data/data.json"  # Caminho relativo ao HTML
     response = await fetch(url)
     text = await response.text()
     data = json.loads(text)
 
-    # Ordenar por posição
     data.sort(key=lambda x: x["posicao"])
-
     container = document.getElementById("ranking-container")
-    container.innerHTML = ""  # Limpa conteúdo inicial
+    container.innerHTML = ""
 
     for item in data:
         div = document.createElement("div")
@@ -128,6 +126,6 @@ async def carregar_ranking():
         container.appendChild(div)
 
 asyncio.ensure_future(carregar_ranking())
-  </py-script>
+</py-script>
 </body>
 </html>
