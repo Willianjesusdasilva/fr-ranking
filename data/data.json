@@ -3,7 +3,7 @@
     {"posicao": 1, "carro": "Corsa", "dono": "Jheferson", "potencia_cv": 272, "tracao": "FWD", "data_medicao": "08/03/2025"},
     {"posicao": 2, "carro": "Parati", "dono": "Biofa", "potencia_cv": 227, "tracao": "FWD", "data_medicao": "08/03/2025"},
     {"posicao": 3, "carro": "Golf", "dono": "Quint", "potencia_cv": 165, "tracao": "FWD", "data_medicao": "23/04/2025"},
-    {"posicao": 4, "carro": "BMW", "dono": "Will", "potencia_cv": 127, "tracao": "RWD", "data_medicao": "08/03/2025"},
+    {"posicao": 4, "carro": "BMW 118i", "dono": "Will", "potencia_cv": 127, "tracao": "RWD", "data_medicao": "08/03/2025"},
     {"posicao": 5, "carro": "Cruze", "dono": "Vini", "potencia_cv": 97, "tracao": "FWD", "data_medicao": "08/03/2025"},
     {"posicao": 6, "carro": "Vectra", "dono": "Dias/Julia", "potencia_cv": 90, "tracao": "FWD", "data_medicao": "08/03/2025"},
     {"posicao": 7, "carro": "HB20", "dono": "Arthur", "potencia_cv": 88, "tracao": "FWD", "data_medicao": "08/03/2025"},
