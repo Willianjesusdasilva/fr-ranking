@@ -1,21 +1,21 @@
 {
   "data": [
-    {"posicao": 1, "carro": "Corsa", "dono": "Jheferson", "potencia_cv": 272, "tracao": "FWD", "data_medicao": "08/03/2025"},
-    {"posicao": 2, "carro": "Parati", "dono": "Biofa", "potencia_cv": 227, "tracao": "FWD", "data_medicao": "08/03/2025"},
-    {"posicao": 3, "carro": "Golf", "dono": "Quint", "potencia_cv": 165, "tracao": "FWD", "data_medicao": "23/04/2025"},
-    {"posicao": 4, "carro": "BMW 118i", "dono": "Will", "potencia_cv": 127, "tracao": "RWD", "data_medicao": "08/03/2025"},
-    {"posicao": 5, "carro": "Cruze", "dono": "Vini", "potencia_cv": 97, "tracao": "FWD", "data_medicao": "08/03/2025"},
-    {"posicao": 6, "carro": "Vectra", "dono": "Dias/Julia", "potencia_cv": 90, "tracao": "FWD", "data_medicao": "08/03/2025"},
-    {"posicao": 7, "carro": "HB20", "dono": "Arthur", "potencia_cv": 88, "tracao": "FWD", "data_medicao": "08/03/2025"},
-    {"posicao": 8, "carro": "Voyage", "dono": "Bruno", "potencia_cv": 87, "tracao": "FWD", "data_medicao": "08/03/2025"},
-    {"posicao": 9, "carro": "Fox", "dono": "Kauan", "potencia_cv": 81, "tracao": "FWD", "data_medicao": "08/03/2025"},
-    {"posicao": 10, "carro": "Peugeot", "dono": "Love and cars", "potencia_cv": 75, "tracao": "FWD", "data_medicao": "08/03/2025"},
-    {"posicao": 11, "carro": "Miura", "dono": "Leo", "potencia_cv": 70.35, "tracao": "FWD", "data_medicao": "08/03/2025"},
-    {"posicao": 12, "carro": "Golf", "dono": "DJ", "potencia_cv": 70.05, "tracao": "FWD", "data_medicao": "08/03/2025"},
-    {"posicao": 13, "carro": "Gol", "dono": "Rihan", "potencia_cv": 69, "observacao": "PASSADA INCOMPLETA", "tracao": "FWD", "data_medicao": "08/03/2025"},
-    {"posicao": 14, "carro": "Gol", "dono": "Bruno", "potencia_cv": 68, "tracao": "FWD", "data_medicao": "08/03/2025"},
-    {"posicao": 15, "carro": "Parati", "dono": "Vitor", "potencia_cv": 67, "tracao": "FWD", "data_medicao": "08/03/2025"},
-    {"posicao": 16, "carro": "Gol", "dono": "Poeta", "potencia_cv": 51, "tracao": "FWD", "data_medicao": "08/03/2025"},
-    {"posicao": 17, "carro": "Kwid", "dono": "Bruno", "potencia_cv": 42, "tracao": "FWD", "data_medicao": "08/03/2025"}
+    {"posicao": 1, "carro": "Corsa", "dono": "Jheferson", "potencia_cv": 272, "tracao": "FWD", "data_medicao": "08/03/2025", "motorizacao": "-"},
+    {"posicao": 2, "carro": "Parati", "dono": "Biofa", "potencia_cv": 227, "tracao": "FWD", "data_medicao": "08/03/2025", "motorizacao": "-"},
+    {"posicao": 3, "carro": "Golf", "dono": "Quint", "potencia_cv": 165, "tracao": "FWD", "data_medicao": "23/04/2025", "motorizacao": "-"},
+    {"posicao": 4, "carro": "BMW 118i", "dono": "Will", "potencia_cv": 127, "tracao": "RWD", "data_medicao": "08/03/2025", "motorizacao": "1.6 Turbo"},
+    {"posicao": 5, "carro": "Cruze", "dono": "Vini", "potencia_cv": 97, "tracao": "FWD", "data_medicao": "08/03/2025", "motorizacao": "1.8 Asp"},
+    {"posicao": 6, "carro": "Vectra", "dono": "Dias/Julia", "potencia_cv": 90, "tracao": "FWD", "data_medicao": "08/03/2025", "motorizacao": "-"},
+    {"posicao": 7, "carro": "HB20", "dono": "Arthur", "potencia_cv": 88, "tracao": "FWD", "data_medicao": "08/03/2025", "motorizacao": "-"},
+    {"posicao": 8, "carro": "Voyage", "dono": "Bruno", "potencia_cv": 87, "tracao": "FWD", "data_medicao": "08/03/2025", "motorizacao": "-"},
+    {"posicao": 9, "carro": "Fox", "dono": "Kauan", "potencia_cv": 81, "tracao": "FWD", "data_medicao": "08/03/2025", "motorizacao": "-"},
+    {"posicao": 10, "carro": "Peugeot", "dono": "Love and cars", "potencia_cv": 75, "tracao": "FWD", "data_medicao": "08/03/2025", "motorizacao": "-"},
+    {"posicao": 11, "carro": "Miura", "dono": "Leo", "potencia_cv": 70.35, "tracao": "FWD", "data_medicao": "08/03/2025", "motorizacao": "-"},
+    {"posicao": 12, "carro": "Golf", "dono": "DJ", "potencia_cv": 70.05, "tracao": "FWD", "data_medicao": "08/03/2025", "motorizacao": "-"},
+    {"posicao": 13, "carro": "Gol", "dono": "Rihan", "potencia_cv": 69, "observacao": "PASSADA INCOMPLETA", "tracao": "FWD", "data_medicao": "08/03/2025", "motorizacao": "-"},
+    {"posicao": 14, "carro": "Gol", "dono": "Bruno", "potencia_cv": 68, "tracao": "FWD", "data_medicao": "08/03/2025", "motorizacao": "-"},
+    {"posicao": 15, "carro": "Parati", "dono": "Vitor", "potencia_cv": 67, "tracao": "FWD", "data_medicao": "08/03/2025", "motorizacao": "-"},
+    {"posicao": 16, "carro": "Gol", "dono": "Poeta", "potencia_cv": 51, "tracao": "FWD", "data_medicao": "08/03/2025", "motorizacao": "-"},
+    {"posicao": 17, "carro": "Kwid", "dono": "Bruno", "potencia_cv": 42, "tracao": "FWD", "data_medicao": "08/03/2025", "motorizacao": "-"}
   ]
 }

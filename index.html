@@ -176,6 +176,7 @@ async def carregar_ranking():
           <div class='model'>{item['carro']} - {item['dono']}</div>
           <div class='score'>{float(item['potencia_cv']):.0f} cv</div>
           <div class='extra-info'>
+            <div><span>Motor:</span> {item['motorizacao']}</div>
             <div><span>Tração:</span> {item['tracao']}</div>
             <div><span>Medição:</span> {item['data_medicao']}</div>
           </div>
