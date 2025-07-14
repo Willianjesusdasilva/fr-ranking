@@ -2,11 +2,15 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ranking Floripa Racing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Google Font similar à usada na imagem -->
+  <!-- Orbitron (estilo racing) -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- PyScript -->
+  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
 
   <style>
     body {
@@ -17,26 +21,24 @@
     }
 
     header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 20px;
-    background: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      background: #000;
     }
 
-    header h1 {
-      font-size: 48px;
-      margin: 0;
-      color: #f00;
-      letter-spacing: 3px;
+    header img {
+      height: 80px;
+      margin-bottom: 10px;
     }
 
     header h2 {
       font-size: 24px;
       color: #ccc;
       font-weight: normal;
-      margin-top: 10px;
+      margin: 0;
     }
 
     .ranking {
@@ -68,12 +70,12 @@
 
     .model {
       flex: 1;
-      font-size: 20px;
+      font-size: 18px;
       color: #fff;
     }
 
     .score {
-      font-size: 20px;
+      font-size: 18px;
       color: #0f0;
     }
 
@@ -86,31 +88,46 @@
 </head>
 <body>
   <header>
-    <img src="assets/FLORIPA RACING LOGO SVG.svg" alt="Floripa Racing Logo" style="height: 80px;">
+    <img src="assets/FLORIPA RACING LOGO SVG.svg" alt="Floripa Racing Logo">
     <h2>Ranking dos Carros</h2>
   </header>
 
-  <div class="ranking">
-    <div class="car-entry">
-      <div class="rank">1°</div>
-      <div class="model">BMW 118i - Will</div>
-      <div class="score">245cv</div>
-    </div>
-    <div class="car-entry">
-      <div class="rank">2°</div>
-      <div class="model">Golf GTI - João</div>
-      <div class="score">230cv</div>
-    </div>
-    <div class="car-entry">
-      <div class="rank">3°</div>
-      <div class="model">Civic SI - Lucas</div>
-      <div class="score">225cv</div>
-    </div>
-    <!-- Adicione mais entradas aqui -->
+  <div class="ranking" id="ranking-container">
+    <p>Carregando ranking...</p>
   </div>
 
   <footer>
-    Atualizado em Julho de 2025 - Encontro toda Quinta às 21:30 no Koxixos
+    Atualizado automaticamente em tempo real — Powered by Floripa Racing
   </footer>
+
+  <py-script>
+from js import fetch, document
+import asyncio
+import json
+
+async def carregar_ranking():
+    url = "https://raw.githubusercontent.com/Willianjesusdasilva/fr-ranking/refs/heads/main/data/data.json"
+    response = await fetch(url)
+    text = await response.text()
+    data = json.loads(text)
+
+    # Ordenar por posição
+    data.sort(key=lambda x: x["posicao"])
+
+    container = document.getElementById("ranking-container")
+    container.innerHTML = ""  # Limpa conteúdo inicial
+
+    for item in data:
+        div = document.createElement("div")
+        div.className = "car-entry"
+        div.innerHTML = f"""
+            <div class='rank'>{item['posicao']}º</div>
+            <div class='model'>{item['carro']} - {item['dono']}</div>
+            <div class='score'>{item['potencia_cv']}cv</div>
+        """
+        container.appendChild(div)
+
+asyncio.ensure_future(carregar_ranking())
+  </py-script>
 </body>
 </html>
