@@ -7,10 +7,11 @@
 
   <!-- Orbitron (estilo racing) -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <!-- PyScript CSS -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
 
-  <!-- PyScript -->
-  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <!-- This script tag bootstraps PyScript -->
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
 
   <style>
     body {
@@ -100,16 +101,17 @@
     Atualizado automaticamente em tempo real — Powered by Floripa Racing
   </footer>
 
-<py-script>
+<script type="py">
 from js import fetch, document
 import asyncio
 import json
 
 async def carregar_ranking():
-    url = "data/data.json"  # Caminho relativo ao HTML
+    url = "https://willianjesusdasilva.github.io/fr-ranking/data/data.json"  # Caminho relativo ao HTML
     response = await fetch(url)
     text = await response.text()
     data = json.loads(text)
+    data = data["data"]
 
     data.sort(key=lambda x: x["posicao"])
     container = document.getElementById("ranking-container")
@@ -126,6 +128,6 @@ async def carregar_ranking():
         container.appendChild(div)
 
 asyncio.ensure_future(carregar_ranking())
-</py-script>
+</script>
 </body>
 </html>
