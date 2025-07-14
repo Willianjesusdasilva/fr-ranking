@@ -5,7 +5,7 @@
     {"posicao": 3, "carro": "Golf", "dono": "Quint", "potencia_cv": 165, "tracao": "FWD", "data_medicao": "23/04/2025", "motorizacao": "-"},
     {"posicao": 4, "carro": "BMW 118i", "dono": "Will", "potencia_cv": 127, "tracao": "RWD", "data_medicao": "08/03/2025", "motorizacao": "1.6 Turbo"},
     {"posicao": 5, "carro": "Cruze", "dono": "Vini", "potencia_cv": 97, "tracao": "FWD", "data_medicao": "08/03/2025", "motorizacao": "1.8 Asp"},
-    {"posicao": 6, "carro": "Vectra", "dono": "Dias/Julia", "potencia_cv": 90, "tracao": "FWD", "data_medicao": "08/03/2025", "motorizacao": "-"},
+    {"posicao": 6, "carro": "Vectra", "dono": "Dias/Julia", "potencia_cv": 90, "tracao": "FWD", "data_medicao": "08/03/2025", "motorizacao": "2.0 Asp"},
     {"posicao": 7, "carro": "HB20", "dono": "Arthur", "potencia_cv": 88, "tracao": "FWD", "data_medicao": "08/03/2025", "motorizacao": "-"},
     {"posicao": 8, "carro": "Voyage", "dono": "Bruno", "potencia_cv": 87, "tracao": "FWD", "data_medicao": "08/03/2025", "motorizacao": "-"},
     {"posicao": 9, "carro": "Fox", "dono": "Kauan", "potencia_cv": 81, "tracao": "FWD", "data_medicao": "08/03/2025", "motorizacao": "-"},
