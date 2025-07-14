@@ -1,0 +1,21 @@
+{"data":
+    [
+  { "posicao": 1, "carro": "Corsa", "dono": "Jheferson", "potencia_cv": 272, "data_medicao": "2025-03-08" },
+  { "posicao": 2, "carro": "Parati", "dono": "Biofa", "potencia_cv": 172, "data_medicao": "2025-03-08" },
+  { "posicao": 2, "carro": "Golf", "dono": "Quint", "potencia_cv": 151, "data_medicao": "2025-03-08" },
+  { "posicao": 3, "carro": "BMW", "dono": "Will", "potencia_cv": 127, "data_medicao": "2025-03-08" },
+  { "posicao": 4, "carro": "Cruze", "dono": "Vini", "potencia_cv": 97, "data_medicao": "2025-03-08" },
+  { "posicao": 5, "carro": "Vectra", "dono": "Dias/Julia", "potencia_cv": 90, "data_medicao": "2025-03-08" },
+  { "posicao": 6, "carro": "HB20", "dono": "Arthur", "potencia_cv": 88, "data_medicao": "2025-03-08" },
+  { "posicao": 7, "carro": "Voyage", "dono": "Bruno", "potencia_cv": 87, "data_medicao": "2025-03-08" },
+  { "posicao": 8, "carro": "Fox", "dono": "Kauan", "potencia_cv": 81, "data_medicao": "2025-03-08" },
+  { "posicao": 9, "carro": "Peugeot", "dono": "Love and cars", "potencia_cv": 75, "data_medicao": "2025-03-08" },
+  { "posicao": 10, "carro": "Miura", "dono": "Leo", "potencia_cv": 70.35, "data_medicao": "2025-03-08" },
+  { "posicao": 11, "carro": "Golf", "dono": "DJ", "potencia_cv": 70.05, "data_medicao": "2025-03-08" },
+  { "posicao": 12, "carro": "Gol", "dono": "Rihan", "potencia_cv": 69, "observacao": "PASSADA INCOMPLETA", "data_medicao": "2025-03-08" },
+  { "posicao": 13, "carro": "Gol", "dono": "Bruno", "potencia_cv": 68, "data_medicao": "2025-03-08" },
+  { "posicao": 14, "carro": "Parati", "dono": "Vitor", "potencia_cv": 67, "data_medicao": "2025-03-08" },
+  { "posicao": 15, "carro": "Gol", "dono": "Poeta", "potencia_cv": 51, "data_medicao": "2025-03-08" },
+  { "posicao": 16, "carro": "Kwid", "dono": "Bruno", "potencia_cv": 42, "data_medicao": "2025-03-08" }
+]
+}
