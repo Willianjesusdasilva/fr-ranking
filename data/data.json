@@ -2,7 +2,7 @@
   "data": [
     {"carro": "Corsa", "dono": "Jheferson", "potencia_cv": 272, "tracao": "FWD", "data_medicao": "08/03/2025", "motorizacao": "-"},
     {"carro": "Parati", "dono": "Biofa", "potencia_cv": 227, "tracao": "FWD", "data_medicao": "08/03/2025", "motorizacao": "-"},
-    {"carro": "Golf", "dono": "Quint", "potencia_cv": 165, "tracao": "FWD", "data_medicao": "23/04/2025", "motorizacao": "1.4 Turbo"},
+    {"carro": "Golf", "dono": "ig:golfquint", "potencia_cv": 165, "tracao": "FWD", "data_medicao": "23/04/2025", "motorizacao": "1.4 Turbo"},
     {"carro": "BMW 118i", "dono": "ig:darknessbimmer", "potencia_cv": 127, "tracao": "RWD", "data_medicao": "08/03/2025", "motorizacao": "1.6 Turbo"},
     {"carro": "Cruze", "dono": "ig:vkruze_1.8", "potencia_cv": 97, "tracao": "FWD", "data_medicao": "08/03/2025", "motorizacao": "1.8 Asp"},
     {"carro": "Vectra", "dono": "Dias/Julia", "potencia_cv": 90, "tracao": "FWD", "data_medicao": "08/03/2025", "motorizacao": "2.0 Asp"},
